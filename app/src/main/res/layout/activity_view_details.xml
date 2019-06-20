@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewDetails">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/video_image_D"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Date_D"
+            android:textStyle="bold"
+            android:layout_below="@id/video_image_D"
+            android:text="Date Publish"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration"
+            android:text="Duration"
+            android:textStyle="bold"
+            android:layout_below="@id/Date_D"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Title_D"
+            android:layout_below="@id/duration"
+            android:text="Title of Video"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/description_D"
+            android:text="Description"
+            android:layout_below="@id/Title_D"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShowMore>>"
+            android:layout_marginRight="10dp"
+            android:id="@+id/showmore_dis"
+            android:layout_below="@+id/description_D"
+            android:layout_alignParentRight="true"
+          android:textStyle="bold"
+            />
+
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                        android:id="@+id/lbl_c"
+                   />
+        <ListView
+
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+           android:layout_below="@id/lbl_c"
+            android:layout_gravity="top"
+
+
+
+
+
+            />
+        </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
